@@ -17,11 +17,11 @@ int main(){
 	cin >> n;
 	for (int i = 1; i <= n; ++i) {
 		cin >> op >> s1 >> s2;
-		char *token = strtok(s1, s2);
+		char *token = sjtu::strtok(s1, s2);
 	    while(token != nullptr) {
 			if (*token == '\0') cout << "empty str\n";
 			else cout << token << '\n';
-			token = strtok(nullptr, s2);
+			token = sjtu::strtok(nullptr, s2);
 	    }
 	}
 
